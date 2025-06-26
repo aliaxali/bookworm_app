@@ -48,7 +48,8 @@ router.post("/register",async (req,res)=>{
             id:user._id,
             username:user.username,
             email:user.email,
-            profileImage:user.profileImage
+            profileImage:user.profileImage,
+            createdAt:user.createdAt,
             
         }
        })
@@ -84,7 +85,8 @@ router.post("/login",async (req,res)=>{
             id:user._id,
             email:user.email,
             username:user.username,
-            profileImage:user.profileImage
+            profileImage:user.profileImage,
+            createdAt:user.createdAt,
         }
     })
    } catch (error) {

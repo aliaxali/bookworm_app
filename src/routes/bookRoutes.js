@@ -4,6 +4,7 @@ import cloudinary from "../lib/cloudinary.js"
 import protectRoute from "../middleware/auth.middleware.js"
 const router=express.Router()
 
+//create book
 router.post("/",protectRoute,async (req,res) => {
     try {
         const {title,caption,image,rating}=req.body
@@ -40,7 +41,7 @@ router.get("/",protectRoute,async (req,res) =>{
     //const response =await fetch("http://localhost:3000/api/books?page=3&limit=5")
     try {
         const page=req.query.page || 1
-        const limit=req.query.limit ||5
+        const limit=req.query.limit ||2
         const skip=(page-1)*limit
 
 
