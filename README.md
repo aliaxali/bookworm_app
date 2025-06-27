@@ -33,7 +33,7 @@ This is the backend API for **Bookworm 📖🐛**, a social reading and book rev
 
 ```bash
 git clone https://github.com/aliaxali/bookworm_app.git
-cd bookworm-backend
+cd bookworm_app
 ```
 
 ### 2️⃣ Install dependencies:
